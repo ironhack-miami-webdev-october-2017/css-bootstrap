@@ -1,14 +1,14 @@
 .first {
-  color: indigo;
   border: 5px solid;
+  color: indigo;
 }
 
 .second {
-  color: orange;
   border: 5px solid;
+  color: orange;
 }
 
 .third {
+  border: 5px solid;
   color: deeppink;
-  border: 5px solid;  
 }

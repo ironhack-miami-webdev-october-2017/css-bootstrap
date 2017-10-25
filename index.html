@@ -14,7 +14,48 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <h1> Bootstrap </h1>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+    <!-- The navbar is responsive by default, the following button is what appears when the navbar shrinks -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    <!--       The navbar brand class gives slightly larger text -->
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <h1>
+      Bootstrap
+      <span class="glyphicon glyphicon-sunglasses"></span>
+      <!-- DON'T put text INSIDE the span -->
+    </h1>
 
 
     <div class="container">
@@ -34,13 +75,13 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-4 first">
-          <p>First column</p>
+          <p>First column (container fluid)</p>
         </div>
         <div class="col-sm-4 second">
-          <p>Second column</p>
+          <p>Second column (container fluid)</p>
         </div>
         <div class="col-sm-4 third">
-          <p>Third column</p>
+          <p>Third column (container fluid)</p>
         </div> <!-- column -->
       </div> <!-- row -->
     </div> <!-- container-fluid -->
@@ -76,6 +117,55 @@
     <a href="#0" class="btn btn-danger">
       Not Really A Button
     </a>
+
+
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Dropdown
+        <span class="caret"></span> <!-- Little Down Arrow aka caret -->
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1"> <!-- The actual contents -->
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+
+
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" 
+            data-toggle="modal" data-target="#myModal">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!--  MODAL HEADER -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">This is the Modal Window</h4>
+          </div>
+
+          <!--  MODAL BODY -->
+          <div class="modal-body">
+            ...
+          </div>
+
+          <!--  MODAL FOOTER -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
     <!-- jQuery JavaScript file -->
