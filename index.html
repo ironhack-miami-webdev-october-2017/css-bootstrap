@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Bootstrap </title>
+
+    <!-- Bootstrap link tag -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Bootstrap theme link tag (optional) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Your CSS needs to GO LAST (so you can make adjustments) -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <h1> Bootstrap </h1>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 first">
+          <p>First column</p>
+        </div>
+        <div class="col-md-4 second">
+          <p>Second column</p>
+        </div>
+        <div class="col-md-4 third">
+          <p>Third column</p>
+        </div> <!-- column -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4 first">
+          <p>First column</p>
+        </div>
+        <div class="col-sm-4 second">
+          <p>Second column</p>
+        </div>
+        <div class="col-sm-4 third">
+          <p>Third column</p>
+        </div> <!-- column -->
+      </div> <!-- row -->
+    </div> <!-- container-fluid -->
+
+
+    <blockquote class="blockquote-reverse">
+      <p>“Digital design is like painting, except the paint never dries.”</p>
+      <footer>
+        Neville Brody
+        <cite title="Source Title">Designer</cite>
+      </footer>
+    </blockquote>
+
+
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Insert your email here">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> I want to receive communications from Ironhack.
+        </label>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+
+    <a href="#0" class="btn btn-danger">
+      Not Really A Button
+    </a>
+
+
+    <!-- jQuery JavaScript file -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JavaScript file (goes after jQuery) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Your JavaScript needs to GO LAST (to use the functions defined in theirs) -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
